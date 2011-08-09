@@ -3,7 +3,7 @@
 
 ## How to use GHGlossProgressView
 
-* link against **CoreGraphics.framework**, import the header `#import "GHGlossProgressView.h"` and create an instance
+* link against **CoreGraphics.framework**, `#import "GHGlossProgressView.h"` and create an instance
 
 ```objective-c
 UIColor *tintColor = ...;
