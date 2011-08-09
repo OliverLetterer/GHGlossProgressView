@@ -1,9 +1,9 @@
 //
 //  CGCommon.m
-//  GradientSample
+//  GHGlossProgressView
 //
-//  Created by oliver on 26.12.10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Oliver Letterer on 09.08.11.
+//  Copyright 2011 Home. All rights reserved.
 //
 
 #import "CGCommon.h"

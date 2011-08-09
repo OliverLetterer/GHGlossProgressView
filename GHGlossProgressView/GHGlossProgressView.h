@@ -1,6 +1,6 @@
 //
 //  GHGlossProgressView.h
-//  iGithub
+//  GHGlossProgressView
 //
 //  Created by Oliver Letterer on 09.08.11.
 //  Copyright 2011 Home. All rights reserved.
