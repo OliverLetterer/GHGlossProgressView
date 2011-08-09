@@ -5,7 +5,7 @@
 
 * link against **CoreGraphics.framework**, import the header `#import "GHGlossProgressView.h"` and create an instance
 
-``` objective-c 
+```objective-c
 UIColor *tintColor = ...;
 CGFloat progress = ...;
 GHGlossProgressView *progressView = [[GHGlossProgressView alloc] ...];
