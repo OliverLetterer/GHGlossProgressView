@@ -8,7 +8,7 @@
 ``` objective-c 
 UIColor *tintColor = ...;
 CGFloat progress = ...;
-GHGlossProgressView *progressView = [[GHGlossProgressView alloc] initWithFrame:CGRectMake(10.0f, 60.0f * idx + 10.0f, CGRectGetWidth(self.view.bounds) - 20.0f, 50.0f)];
+GHGlossProgressView *progressView = [[GHGlossProgressView alloc] ...];
 progressView.tintColor = tintColor;
 progressView.progress = progress;
 ```
