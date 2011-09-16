@@ -13,6 +13,8 @@
 @private
     CGFloat _progress;
 	
+    BOOL _hidesWithoutProgress;
+    
 	UIColor *_tintColor;
     CGGradientRef _backgroundGradient;  // retained
 }
@@ -23,5 +25,7 @@
 @property (nonatomic, assign) CGFloat progress;
 
 @property (nonatomic, retain) UIColor *tintColor;
+
+@property (nonatomic, assign) BOOL hidesWithoutProgress;
 
 @end

@@ -27,7 +27,7 @@
 
 @implementation GHGlossProgressView
 @synthesize progress=_progress;
-@synthesize glossTintColor=_glossTintColor, tintColor=_tintColor;
+@synthesize glossTintColor=_glossTintColor, tintColor=_tintColor, hidesWithoutProgress=_hidesWithoutProgress;
 
 #pragma mark - setters and getters
 
@@ -46,6 +46,22 @@
 
 - (CGGradientRef)backgroundGradient {
     return _backgroundGradient;
+}
+
+- (void)setHidesWithoutProgress:(BOOL)hidesWithoutProgress {
+    if (hidesWithoutProgress != _hidesWithoutProgress) {
+        _hidesWithoutProgress = hidesWithoutProgress;
+        
+        if (_hidesWithoutProgress) {
+            if (_progress == 0.0f) {
+                self.alpha = 0.0f;
+            } else {
+                self.alpha = 1.0f;
+            }
+        } else {
+            self.alpha = 1.0f;
+        }
+    }
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
@@ -68,6 +84,17 @@
     
     if (progress != _progress) {
         _progress = progress;
+        
+        if (_hidesWithoutProgress) {
+            if (_progress == 0.0f) {
+                self.alpha = 0.0f;
+            } else {
+                self.alpha = 1.0f;
+            }
+        } else {
+            self.alpha = 1.0f;
+        }
+        
         [self setNeedsDisplay];
     }
 }
