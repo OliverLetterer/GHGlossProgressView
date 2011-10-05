@@ -27,6 +27,9 @@ void HSVtoRGB( float *r, float *g, float *b, float h, float s, float v );
 
 
 void GHDrawGlossGradient(CGContextRef context, CGColorRef color, CGRect inRect) {
+    if (!context) {
+        return;
+    }
     const CGFloat EXP_COEFFICIENT = 1.2f;
     const CGFloat REFLECTION_MAX = 0.60f;
     const CGFloat REFLECTION_MIN = 0.20f;
